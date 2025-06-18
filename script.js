@@ -278,4 +278,31 @@ gsap.from(".project-card", {
       delay: i * 0.15,
     });
   });
+
+// Theme toggle logic
+function setTheme(light) {
+  const body = document.body;
+  const icon = document.getElementById('theme-icon');
+  if (light) {
+    body.classList.add('light-mode');
+    icon.classList.remove('fa-sun');
+    icon.classList.add('fa-moon');
+    localStorage.setItem('theme', 'light');
+  } else {
+    body.classList.remove('light-mode');
+    icon.classList.remove('fa-moon');
+    icon.classList.add('fa-sun');
+    localStorage.setItem('theme', 'dark');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const stored = localStorage.getItem('theme');
+  setTheme(stored === 'light');
+  const toggle = document.getElementById('theme-toggle');
+  toggle.addEventListener('click', () => {
+    const isLight = document.body.classList.contains('light-mode');
+    setTheme(!isLight);
+  });
+});
   

@@ -6,22 +6,29 @@
     padding: 0;
     box-sizing: border-box;
   }
-  body {
-    font-family: "Special Gothic Expanded One", sans-serif; 
-    background-color: #000;
-    color: #fff;
-    overflow: -moz-scrollbars-none; /* For Firefox */
+:root {
+  --bg-color: #000;
+  --text-color: #fff;
+  --link-color: #fff;
+  --header-bg: #000;
+}
+
+body {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow: -moz-scrollbars-none; /* For Firefox */
   -ms-overflow-style: none; /* For Internet Explorer 10+ */
   scrollbar-width: none; /* For Firefox */
-    /* scroll-behavior: smooth; */
-  }
+  /* scroll-behavior: smooth; */
+}
   
   body::-webkit-scrollbar {
     display: none; /* For Chrome, Safari, and Opera */
   }
   a {
     text-decoration: none;
-    color: white;
+    color: var(--link-color);
   }
   
   /* Loading screen */
@@ -305,6 +312,30 @@
     background-color: #28a281;
     border-color: #28a281;
   }
+}
+
+/* Light mode overrides */
+body.light-mode {
+  --bg-color: #fff;
+  --text-color: #000;
+  --link-color: #000;
+  --header-bg: #fff;
+}
+
+body.light-mode .bg-black {
+  background-color: #fff !important;
+}
+
+body.light-mode .text-white {
+  color: #000 !important;
+}
+
+body.light-mode header {
+  background-color: var(--header-bg) !important;
+}
+
+body.light-mode #loading {
+  background: #fff;
 }
 
 
