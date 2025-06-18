@@ -1,6 +1,23 @@
 /* Reset & basic setup */
 @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
 
+:root {
+  --bg-color: #000;
+}
+
+.hero-section {
+  background-color: var(--bg-color);
+}
+
+#particles-hero {
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-content {
+  z-index: 1;
+}
+
 * {
     margin: 0;
     padding: 0;
