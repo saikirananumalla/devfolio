@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio / Sai Kiran Anumalla</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" href="assets/name-logo.png" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+<div class="fixed right-6 top-1/2 transform -translate-y-1/2 h-64 w-1.5 bg-gray-700 rounded-full z-50 hidden sm:block">
+  <div id="scroll-indicator" class="bg-[#1DCD9F] h-0 w-full rounded-full transition-all duration-300 ease-out shadow-md shadow-[#1DCD9F]"></div>
+</div>
+
+    <!-- FIXED HEADER NAVIGATION -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-90 backdrop-blur-md border-b border-[#1DCD9F]">
+      <nav class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
+        <!-- Logo / Name -->
+        <div class="text-[#1DCD9F] text-xl font-bold tracking-widest">
+          <a href="#">Sai Kiran Anumalla</a>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="flex space-x-6 text-xs font-semibold uppercase tracking-wide">
+          <li><a href="#about" class="text-gray-100 hover:text-[#1DCD9F] transition">About</a></li>
+          <li><a href="#journey" class="text-gray-100 hover:text-[#1DCD9F] transition">Experience</a></li>
+          <li><a href="#education" class="text-gray-100 hover:text-[#1DCD9F] transition">Education</a></li>
+          <li><a href="#tech-stack" class="text-gray-100 hover:text-[#1DCD9F] transition">Skills</a></li>
+          <li><a href="#certifications" class="text-gray-100 hover:text-[#1DCD9F] transition">Certifications</a></li>
+          <li><a href="#projects" class="text-gray-100 hover:text-[#1DCD9F] transition">Projects</a></li>
+          <li><a href="#upcoming-projects" class="text-gray-100 hover:text-[#1DCD9F] transition">Upcoming</a></li>
+          <li><a href="#contact" class="text-gray-100 hover:text-[#1DCD9F] transition">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="position-relative container-fluid min-vh-100 d-flex justify-content-center align-items-center text-white overflow-hidden" style="background-color: #000000">
+        <!-- Hero Particle Background -->
+        <div id="particles-hero" class="position-absolute w-100 h-100 top-0 start-0" style="z-index: 0"></div>
+
+        <!-- Hero Content -->
+        <div class="container text-center position-relative" style="z-index: 1">
+            <h1 class="display-4 fw-bold">
+                <span class="text-white me-2">Hi, I'm</span>
+                <button class="button" data-text="Sai Kiran">
+                    <span class="actual-text">&nbsp;Sai Kiran&nbsp;</span>
+                    <span aria-hidden="true" class="hover-text">Sai Kiran</span>
+                </button>
+            </h1>
+            <p class="lead text-light mt-3">
+              I love building software, designing scalable systems, and finding better ways to make things work.
+            </p>
+          <div class="flex gap-4 mt-4 justify-center">
+            <a href="#journey" class="shadow__btn">Career Timeline</a>
+            <a href="#projects" class="shadow__btn">View Projects</a>
+          </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="bg-black text-white py-20 px-6">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-10 px-4">
+
+        <!-- Profile Image -->
+        <div class="flex-shrink-0 w-64 h-64 rounded-xl overflow-hidden shadow-lg transition duration-500" id="about-img">
+          <img src="./assets/profilepic.jpg" alt="Sai Kiran Anumalla" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Text Content -->
+        <div class="max-w-2xl" id="about-text">
+          <h2 class="text-3xl md:text-4xl font-semibold leading-snug mb-4">
+            Hey, I’m <span class="text-[#1DCD9F] font-bold">Sai Kiran Anumalla</span>, an engineer who loves creating meaningful software,
+            understanding how systems work, and building scalable solutions with care.
+          </h2>
+
+          <p class="text-gray-300 text-lg leading-relaxed mb-6">
+            I'm currently pursuing my Master’s in Computer Science at Northeastern University, with a focus on full-stack development,
+            distributed systems, and backend engineering. I enjoy transforming complex challenges into elegant solutions.
+          </p>
+
+          <p class="text-gray-300 text-lg leading-relaxed mb-6">
+            Whether I’m building scalable backend systems, deploying apps to the cloud, or exploring big data and GenAI,
+            I love understanding how things work and finding better ways to create software that matters. Outside of work,
+            I enjoy mentoring, side projects, and the occasional weekend road trips.
+          </p>
+
+          <!-- Social Icons -->
+          <div class="flex space-x-5 mt-6 align-items-center justify-content-center md:justify-start">
+            <a href="https://github.com/saikirananumalla" target="_blank">
+              <img src="./assets/github-logo.png" class="w-9 h-9" alt="github-logo">
+            </a>
+            <a href="https://www.linkedin.com/in/saikirananumalla/" target="_blank">
+              <img src="./assets/linkedin-logo.png" class="w-9 h-9" alt="linkedin-logo">
+            </a>
+            <a href="mailto:saikirananumalla@gmail.com">
+              <img src="./assets/mail-logo.png" class="w-9 h-9" alt="mail-logo">
+            </a>
+            <a href="https://www.instagram.com/sai.kiran.anumalla" target="_blank">
+              <img src="./assets/instagram-logo.png" class="w-9 h-9" alt="instagram-logo">
+            </a>
+          </div>
+
+          <!-- Download Resume Button -->
+          <div class="flex align-items-center justify-content-center mt-8">
+            <a href="https://drive.google.com/file/d/1Xa6antu_G1eshSwUE8M14Pe3LzOFlDaL/view?usp=sharing"
+               rel="noopener noreferrer"
+               target="_blank"
+               resume>
+              <button class="dbutton" type="dbutton">
+                <span class="dbutton__text">Resume</span>
+                <span class="dbutton__icon">
+              <!-- SVG icon as-is -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg">
+                <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
+                <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
+                <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
+              </svg>
+            </span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY SECTION -->
+    <section id="journey" class="bg-black text-white py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold mb-16 text-center text-[#1DCD9F]">My Journey</h2>
+
+        <div class="relative">
+          <!-- Vertical Line -->
+          <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#1DCD9F]"></div>
+
+          <!-- Teaching Assistant – Northeastern -->
+          <div class="relative mb-16 md:mb-24 md:flex justify-end">
+            <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+            <div class="md:w-1/2"></div>
+            <div class="md:w-1/2 md:pl-10">
+              <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+                <h3 class="text-xl font-semibold text-[#1DCD9F]">Teaching Assistant – Northeastern University</h3>
+                <span class="text-sm text-gray-400">May 2025 – Jun 2025 · Boston, MA</span>
+                <p class="mt-2 text-gray-300">
+                  Supported CS3520: Programming in C++ by holding office hours, grading, and helping students on course forums while ensuring conceptual clarity in assignments and materials.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Codametrix -->
+          <div class="relative mb-16 md:mb-24 md:flex justify-start">
+            <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+            <div class="md:w-1/2 md:pr-10">
+              <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+                <h3 class="text-xl font-semibold text-[#1DCD9F]">Software Engineer Co-op – Codametrix</h3>
+                <span class="text-sm text-gray-400">Jun 2024 – Nov 2024 · Boston, MA</span>
+                <p class="mt-2 text-gray-300">
+                  At Codametrix, I worked on a team focused on automating medical coding workflows using scalable backend services. I designed and built full-stack features with Java Spring Boot and React, contributing to both the orchestration logic and user-facing components.
+                  <br><br>
+                  One of my key contributions was developing a workflow orchestration system using Camunda, enabling better automation and reducing manual overhead. I also implemented resilient microservices that integrated with Kafka and AWS SQS to track and notify production-level stuck cases via Slack.
+                  <br><br>
+                  Beyond backend improvements, I introduced audit cleanup pipelines that purged over 360,000 records daily, cutting storage costs significantly. The experience sharpened my understanding of event-driven systems, cloud-native deployments, and designing for both REST and GraphQL-based APIs.
+                </p>
+              </div>
+            </div>
+            <div class="md:w-1/2"></div>
+          </div>
+
+          <!-- Northeastern University -->
+          <div id="education" class="relative mb-16 md:mb-24 md:flex justify-end">
+            <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+            <div class="md:w-1/2"></div>
+            <div class="md:w-1/2 md:pl-10">
+              <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+                <h3 class="text-xl font-semibold text-[#1DCD9F]">MS in Computer Science – Northeastern University</h3>
+                <span class="text-sm text-gray-400">Sep 2023 – Aug 2025 · Boston, MA</span>
+                <p class="mt-2 text-gray-300">
+                  My time at Northeastern helped me solidify my foundations in computer science while opening doors to explore cutting-edge technologies like GenAI and big data systems. I mastered core concepts in data structures, system design, and software engineering, and began applying them through projects that mirrored real-world scale.
+                  <br><br>
+                  The coursework covered full-stack web development, distributed systems, programming paradigms, data management and processing, DBMS, iOS app development, and advanced algorithms. This blend of theory and practice shaped my ability to build resilient systems and experiment with emerging technologies like AI-powered assistants and streaming platforms.
+                  <br><br>
+                  Alongside my academic work, I’ve been actively exploring real-world applications of what I’ve learned — from diving deeper into system design principles to understanding how scalable, distributed systems power modern software. This journey has sparked a growing interest in GenAI, cloud-native architectures, and the evolving challenges of building reliable, high-performance systems.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- BNY Mellon – Software Engineer II -->
+          <div class="relative mb-16 md:mb-24 md:flex justify-end">
+            <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+            <div class="md:w-1/2"></div>
+            <div class="md:w-1/2 md:pl-10">
+              <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+                <h3 class="text-xl font-semibold text-[#1DCD9F]">Software Engineer II – BNY Mellon</h3>
+                <span class="text-sm text-gray-400">Feb 2023 – Aug 2023 · Pune, India</span>
+                <p class="mt-2 text-gray-300">
+                  During this phase, I took on greater ownership of feature development while mentoring a team of junior developers across sprint cycles and code reviews. A large part of my work involved designing and implementing workflow automation using Camunda, helping streamline operational processes and reduce manual intervention.
+                  <br><br>
+                  I also contributed to building an event-driven data delivery pipeline that integrated Snowflake and Azure messaging services, ensuring high-throughput, SLA-compliant data transfers across downstream systems. This role pushed me to grow as both an engineer and a collaborator — balancing development, design reviews, and hands-on guidance to help teammates upskill in architecture and backend fundamentals.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- BNY Mellon – Software Engineer I -->
+          <div class="relative mb-16 md:mb-24 md:flex justify-start">
+            <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+            <div class="md:w-1/2 md:pr-10">
+              <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+                <h3 class="text-xl font-semibold text-[#1DCD9F]">Software Engineer I – BNY Mellon</h3>
+                <span class="text-sm text-gray-400">Jul 2021 – Jan 2023 · Remote, India</span>
+                <p class="mt-2 text-gray-300">
+                  As my first full-time role, this was where I laid the foundation for everything I know about building reliable software in a production environment. I contributed as a full-stack developer, using Angular for frontend interfaces and Java with Spring Boot to build scalable REST APIs.
+                  <br><br>
+                  I quickly got comfortable with SQL optimization, Java-based backend logic, and end-to-end development workflows — often owning features from database schema design to UI integration. I participated in Agile SCRUM cycles, worked through Jira stories, and collaborated via Git, code reviews, and daily standups.
+                  <br><br>
+                  The role also exposed me to cloud deployments on Azure, ETL processes, and remote-first development practices, giving me a well-rounded understanding of how enterprise systems are built and maintained.
+                </p>
+              </div>
+            </div>
+            <div class="md:w-1/2"></div>
+          </div>
+
+          <!-- Samsung R&D Internship -->
+          <div class="relative mb-16 md:mb-24 md:flex justify-end">
+            <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+            <div class="md:w-1/2"></div>
+            <div class="md:w-1/2 md:pl-10">
+              <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+                <h3 class="text-xl font-semibold text-[#1DCD9F]">Software Engineer Intern – Samsung R&D</h3>
+                <span class="text-sm text-gray-400">May 2020 – Jun 2020 · Noida, India</span>
+                <p class="mt-2 text-gray-300">
+                  Contributed to the ML team by building a Python-based training and evaluation pipeline for video captioning models. Gained early exposure to research workflows, scripting, and model experimentation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- IIT BHU – Undergraduate -->
+          <div class="relative mb-16 md:mb-24 md:flex justify-start">
+            <div class="hidden md:block absolute w-4 h-4 bg-[#1DCD9F] rounded-full left-1/2 transform -translate-x-1/2 top-4 z-10"></div>
+            <div class="md:w-1/2 md:pr-10">
+              <div class="bg-[#111] p-6 rounded-2xl border border-[#1DCD9F] shadow-lg journey-card">
+                <h3 class="text-xl font-semibold text-[#1DCD9F]">B.Tech in Computer Science – IIT BHU</h3>
+                <span class="text-sm text-gray-400">2017 – 2021 · Varanasi, India</span>
+                <p class="mt-2 text-gray-300">
+                  Admitted to IIT BHU by securing an All India Rank of 2332 in the IIT-JEE exam, placing in the top 0.02% out of 1 million+ applicants. Built strong fundamentals across operating systems, databases, computer networks, machine learning, and web development — laying the groundwork for my future in software engineering.
+                </p>
+              </div>
+            </div>
+            <div class="md:w-1/2"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+<!-- TECH STACK SECTION -->
+<section id="tech-stack" class="bg-black text-white py-20 px-6 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto flex flex-col gap-20">
+    <!-- FRONTEND -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="frontend">
+      <!-- Label -->
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#frontend').scrollIntoView({behavior: 'smooth'})">FRONTEND</div>
+      </div>
+
+      <!-- Tech Grid -->
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+        <!-- Tech Icons Here -->
+        <div class="flex items-center gap-2 ">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-6 h-6">
+          <span class="text-lg">Javascript</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="w-6 h-6">
+          <span class="text-lg">TypeScript</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-6 h-6">
+          <span class="text-lg">React</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" class="w-6 h-6 bg-white rounded">
+          <span class="text-lg">Next.js</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"  class="w-6 h-6"/>
+          <span class="text-lg">HTML</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="w-6 h-6" />
+         <span class="text-lg">CSS</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" class="w-6 h-6">
+          <span class="text-lg">Bootstrap</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BACKEND -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="backend">
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#backend').scrollIntoView({behavior: 'smooth'})">BACKEND</div>
+      </div>
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="w-6 h-6">
+          <span class="text-lg">Java</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" class="w-6 h-6">
+          <span class="text-lg">Spring Boot</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-6 h-6">
+          <span class="text-lg">Python</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" class="w-6 h-6 bg-white rounded p-0.5">
+          <span class="text-lg">FastAPI</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="w-6 h-6">
+          <span class="text-lg">Node.js</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" class="w-6 h-6 bg-white rounded p-0.5">
+          <span class="text-lg">Express.js</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" class="w-6 h-6">
+          <span class="text-lg">GraphQL</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <i class="fas fa-link text-white w-6 h-6 flex items-center justify-center"></i>
+          <span class="text-lg">REST APIs</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" class="w-6 h-6">
+          <span class="text-lg">Kafka</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="./assets/camunda.jpeg" class="w-6 h-6" alt="Camunda">
+          <span class="text-lg">Camunda</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="./assets/grpc-logo.svg" class="w-6 h-6" alt="gRPC">
+          <span class="text-lg">gRPC</span>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- DATABASE & ORM -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="database">
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#database').scrollIntoView({behavior: 'smooth'})">DATABASE, CACHE & ORM</div>
+      </div>
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+
+        <!-- SQL / NoSQL Databases -->
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="w-6 h-6">
+          <span class="text-lg">PostgreSQL</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-6 h-6">
+          <span class="text-lg">MySQL</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-6 h-6">
+          <span class="text-lg">MongoDB</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" class="w-6 h-6">
+          <span class="text-lg">Redis</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="./assets/cassandra.svg" class="w-6 h-6">
+          <span class="text-lg">Cassandra</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg" class="w-6 h-6">
+          <span class="text-lg">Elasticsearch</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="./assets/aws-dynamodb.svg" class="w-6 h-6">
+          <span class="text-lg">DynamoDB</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" class="w-6 h-6">
+          <span class="text-lg">Firestore</span>
+        </div>
+
+        <!-- ORMs -->
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-plain.svg" class="w-6 h-6">
+          <span class="text-lg">Hibernate</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongoose/mongoose-original.svg" class="w-6 h-6" alt="Mongoose">
+          <span class="text-lg">Mongoose</span>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- CLOUD & DEVOPS -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="cloud">
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#cloud').scrollIntoView({behavior: 'smooth'})">CLOUD & DEVOPS</div>
+      </div>
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+
+        <!-- AWS Core -->
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" class="w-6 h-6">
+          <span class="text-lg">AWS</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://raw.githubusercontent.com/marwin1991/aws-icons-for-markdown/main/icons/s3.svg" class="w-6 h-6" alt="S3">
+          <span class="text-lg">S3</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://raw.githubusercontent.com/marwin1991/aws-icons-for-markdown/main/icons/ec2.svg" class="w-6 h-6" alt="EC2">
+          <span class="text-lg">EC2</span>
+        </div>
+
+        <!-- AWS Additional -->
+        <div class="flex items-center gap-2">
+          <img src="https://raw.githubusercontent.com/marwin1991/aws-icons-for-markdown/main/icons/lambda.svg" class="w-6 h-6" alt="Lambda">
+          <span class="text-lg">Lambda</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://raw.githubusercontent.com/marwin1991/aws-icons-for-markdown/main/icons/sns.svg" class="w-6 h-6" alt="SNS">
+          <span class="text-lg">SNS</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://raw.githubusercontent.com/marwin1991/aws-icons-for-markdown/main/icons/sqs.svg" class="w-6 h-6" alt="SQS">
+          <span class="text-lg">SQS</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://raw.githubusercontent.com/marwin1991/aws-icons-for-markdown/main/icons/kinesis.svg" class="w-6 h-6" alt="Kinesis">
+          <span class="text-lg">Kinesis</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://raw.githubusercontent.com/marwin1991/aws-icons-for-markdown/main/icons/kinesis.svg" class="w-6 h-6" alt="Kinesis">
+          <span class="text-lg">Cloud Formation</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://raw.githubusercontent.com/marwin1991/aws-icons-for-markdown/main/icons/api-gateway.svg" class="w-6 h-6" alt="API Gateway">
+          <span class="text-lg">API Gateway</span>
+        </div>
+
+        <!-- Azure -->
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" class="w-6 h-6">
+          <span class="text-lg">Azure</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://raw.githubusercontent.com/Azure/azure-icons/main/icons/Service%20Bus.svg" class="w-6 h-6" alt="Azure Service Bus">
+          <span class="text-lg">Service Bus</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://raw.githubusercontent.com/Azure/azure-icons/main/icons/Storage%20Blob.svg" class="w-6 h-6" alt="Blob Storage">
+          <span class="text-lg">Blob Storage</span>
+        </div>
+
+        <!-- Google Cloud -->
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" class="w-6 h-6">
+          <span class="text-lg">Google Cloud</span>
+        </div>
+
+        <!-- DevOps & CI/CD -->
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="w-6 h-6">
+          <span class="text-lg">Docker</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" class="w-6 h-6">
+          <span class="text-lg">Kubernetes</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" class="w-6 h-6">
+          <span class="text-lg">Jenkins</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/githubactions.svg" class="w-6 h-6" alt="GitHub Actions">
+          <span class="text-lg">GitHub Actions</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://raw.githubusercontent.com/marwin1991/aws-icons-for-markdown/main/icons/cloudwatch.svg" class="w-6 h-6" alt="CloudWatch">
+          <span class="text-lg">CloudWatch</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MONITORING & LOGGING -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="monitoring">
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#monitoring').scrollIntoView({behavior: 'smooth'})">MONITORING & LOGGING</div>
+      </div>
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+
+        <div class="flex items-center gap-2">
+          <img src="https://raw.githubusercontent.com/marwin1991/aws-icons-for-markdown/main/icons/cloudwatch.svg" class="w-6 h-6" alt="CloudWatch">
+          <span class="text-lg">CloudWatch</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" class="w-6 h-6">
+          <span class="text-lg">Grafana</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://raw.githubusercontent.com/prometheus/prometheus/main/documentation/images/prometheus-logo.png" class="w-6 h-6" alt="Prometheus">
+          <span class="text-lg">Prometheus</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/splunk.svg" class="w-6 h-6" alt="Splunk">
+          <span class="text-lg">Splunk</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/NewRelic-logo.png" class="w-6 h-6 bg-white rounded p-1" alt="New Relic">
+          <span class="text-lg">New Relic</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TESTING & QA -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="testing">
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#testing').scrollIntoView({behavior: 'smooth'})">TESTING & QA</div>
+      </div>
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-original.svg" class="w-6 h-6">
+          <span class="text-lg">JUnit</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/mockito.svg" class="w-6 h-6" alt="Mockito">
+          <span class="text-lg">Mockito</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" class="w-6 h-6">
+          <span class="text-lg">Jest</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://raw.githubusercontent.com/cypress-io/cypress-icons/master/src/logo.svg" class="w-6 h-6" alt="Cypress">
+          <span class="text-lg">Cypress</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://raw.githubusercontent.com/visionmedia/supertest/master/logo.svg" class="w-6 h-6" alt="Supertest">
+          <span class="text-lg">Supertest</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" class="w-6 h-6">
+          <span class="text-lg">Postman</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cucumber.io/images/cucumber/cucumber-logo.svg" class="w-6 h-6" alt="Cucumber">
+          <span class="text-lg">Cucumber</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TOOLS & PRODUCTIVITY -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="tools">
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#tools').scrollIntoView({behavior: 'smooth'})">TOOLS & PRODUCTIVITY</div>
+      </div>
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="w-6 h-6">
+          <span class="text-lg">Git</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-6 h-6">
+          <span class="text-lg">GitHub</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" class="w-6 h-6">
+          <span class="text-lg">IntelliJ</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="w-6 h-6">
+          <span class="text-lg">VS Code</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" class="w-6 h-6">
+          <span class="text-lg">Maven</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg" class="w-6 h-6">
+          <span class="text-lg">Gradle</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://static-00.iconduck.com/assets.00/swagger-icon-512x512-20k61zsn.png" class="w-6 h-6" alt="Swagger">
+          <span class="text-lg">Swagger</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/jira.svg" class="w-6 h-6" alt="Jira">
+          <span class="text-lg">Jira</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Atlassian_Confluence_Logo.svg" class="w-6 h-6" alt="Confluence">
+          <span class="text-lg">Confluence</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BIG DATA & GEN AI -->
+    <div class="flex md:flex-row flex-col gap-8 items-start" id="bigdata">
+      <div class="w-full md:w-1/5 text-gray-400 text-lg font-bold sticky top-18">
+        <div class="category-label cursor-pointer hover:text-white transition" onclick="document.querySelector('#bigdata').scrollIntoView({behavior: 'smooth'})">BIG DATA & GEN AI</div>
+      </div>
+      <div class="w-full md:w-4/5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 reveal-section">
+
+        <!-- Big Data -->
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" class="w-6 h-6">
+          <span class="text-lg">Hadoop</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://static-00.iconduck.com/assets.00/hdfs-icon-512x512-ccpmc4o5.png" class="w-6 h-6" alt="HDFS">
+          <span class="text-lg">HDFS</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" class="w-6 h-6">
+          <span class="text-lg">Spark</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Apache_Hive_logo.svg" class="w-6 h-6 bg-white rounded p-1" alt="Hive">
+          <span class="text-lg">Hive</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.worldvectorlogo.com/logos/snowflake-1.svg" class="w-6 h-6 bg-white rounded p-1" alt="Snowflake">
+          <span class="text-lg">Snowflake</span>
+        </div>
+
+        <!-- GenAI -->
+        <div class="flex items-center gap-2">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/openai.svg" class="w-6 h-6">
+          <span class="text-lg">OpenAI API</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="bg-black text-white py-20 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">Certifications</h2>
+
+        <!-- Card container -->
+        <div class="bg-[#111] border border-[#1DCD9F] rounded-xl p-6 flex flex-col items-center space-y-4 max-w-sm mx-auto">
+
+          <!-- Centered Credly Badge -->
+          <div class="w-full flex justify-center">
+            <div style="width: 200px; height: 270px;">
+              <div
+                      data-iframe-width="200"
+                      data-iframe-height="270"
+                      data-share-badge-id="83c5eb86-d93f-4e7b-8f87-e8408ac12aca"
+                      data-share-badge-host="https://www.credly.com">
+              </div>
+            </div>
+          </div>
+
+          <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+          <!-- Description -->
+          <p class="text-gray-300 text-sm leading-relaxed">
+            <strong>AWS Certified Developer – Associate</strong> verifies the ability to build and deploy secure, scalable cloud applications using core AWS services and modern DevOps practices. Issued by Amazon Web Services in 2024.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PROJECTS SECTION -->
+<section id="projects" class="relative bg-black text-white py-20 px-6 overflow-hidden">
+
+  <!-- PARTICLES BACKGROUND -->
+  <div id="particles-projects" class="absolute top-0 left-0 w-full h-full z-0"></div>
+
+  <!-- ACTUAL PROJECT CONTENT -->
+  <div class="relative z-10">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">Projects</h2>
+      <p class="text-gray-300 text-lg">Some of the things I've built.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/kvstore-ss.png" alt="Key-Value Store Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Distributed Key-Value Store – Paxos-Based Fault-Tolerant System</h3>
+          <p class="text-gray-700 mb-4">
+            Engineered a multi-threaded key-value store in Java using Paxos consensus and Java RMI for resilient replication.
+            Built health checks and P2P communication for consistent data across replicas — all without a central coordinator.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="w-4 h-4" />
+        Java
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/multithreading-icon.png" class="w-4 h-4" />
+        Multithreading
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/rmi-icon.png" class="w-4 h-4" />
+        Java RMI
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/paxos-icon.png" class="w-4 h-4" />
+        Paxos
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/loadbalancer-icon.png" class="w-4 h-4" />
+        Load Balancer
+      </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://github.com/saikirananumalla/paxos-kv-store" target="_blank"
+               class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/image-editor-ss.png" alt="Image Editor Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Image Manipulation & Enhancement</h3>
+          <p class="text-gray-700 mb-4">
+            Developed a desktop GUI editor in Java with cropping, grayscale, blur, and brightness controls. Built using MVC and design patterns like Builder, Strategy, and Command to support undo/redo, batch processing, and file I/O with clean modular code.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-4 h-4" />
+        Java
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/mvc-icon.png" class="w-4 h-4" alt="MVC" />
+        MVC
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/design-patterns-icon.png" class="w-4 h-4" alt="Design Patterns" />
+        Design Patterns
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/gui-icon.png" class="w-4 h-4" alt="GUI" />
+        GUI
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/testing-icon.png" class="w-4 h-4" alt="Testing" />
+        Unit + Integration Testing
+      </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://your-live-demo-link.com" target="_blank"
+               class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo
+            </a>
+            <a href="https://github.com/your-repo-link" target="_blank"
+               class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/stackoverflow-clone-ss.png" alt="StackOverflow Replica Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">StackOverflow Replica – Full-Stack Q&A Platform</h3>
+          <p class="text-gray-700 mb-4">
+            Built a scalable Q&A platform with JWT authentication, upvotes/downvotes, and question threading. Implemented CSRF protection, BDD testing with Cypress, and CI/CD via GitHub Actions for production-grade reliability.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-4 h-4" />
+        React
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" class="w-4 h-4" />
+        Express.js
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="w-4 h-4" />
+        MongoDB
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-4 h-4" />
+        GitHub Actions
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/lusca-icon.png" class="w-4 h-4" alt="Lusca" />
+        Lusca CSRF
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://raw.githubusercontent.com/cypress-io/cypress-icons/master/src/logo.svg" class="w-4 h-4" />
+        Cypress
+      </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://your-live-demo-link.com" target="_blank"
+               class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo
+            </a>
+            <a href="https://github.com/your-repo-link" target="_blank"
+               class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/flatmates-ss.png" alt="Flatmates App Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Flatmates – Shared Chore and Expense Manager</h3>
+          <p class="text-gray-700 mb-4">
+            Built a full-stack app to manage household chores, expenses, and roles across roommates. Integrated secure login, admin/member roles, activity tracking, and REST APIs using FastAPI, MySQL, and JWT authentication.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-4 h-4" />
+        React
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-4 h-4" />
+        Python
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" class="w-4 h-4 bg-white rounded p-0.5" />
+        FastAPI
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-4 h-4" />
+        MySQL
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/oauth-icon.svg" class="w-4 h-4" />
+        OAuth 2.0
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/jwt-icon.png" class="w-4 h-4" />
+        JWT Auth
+      </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://your-live-demo-link.com" target="_blank"
+               class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo
+            </a>
+            <a href="https://github.com/your-repo-link" target="_blank"
+               class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/job-board-ss.png" alt="Job Board App Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Job Board Application</h3>
+          <p class="text-gray-700 mb-4">
+            Developed a GraphQL-powered job board for posting jobs, managing users, and tracking applications. Used custom React hooks for data fetching, GraphQL subscriptions for real-time updates, and data loaders for performance.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-4 h-4" />
+        React
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" class="w-4 h-4" />
+        GraphQL
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" class="w-4 h-4" />
+        SQLite
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/knex-icon.png" class="w-4 h-4" />
+        Knex.js
+      </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://your-live-demo-link.com" target="_blank"
+               class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo
+            </a>
+            <a href="https://github.com/your-repo-link" target="_blank"
+               class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/everythingnu-ss.png" alt="EverythingNU App Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">EverythingNU – Campus Life Companion</h3>
+          <p class="text-gray-700 mb-4">
+            Designed a student-focused event discovery app for Northeastern University. Supported authentication, RSVP tracking, photo uploads, and a map view for browsing events by location — all built to streamline campus engagement.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" class="w-4 h-4" />
+        iOS
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" class="w-4 h-4" />
+        Firebase
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/auth-icon.png" class="w-4 h-4" />
+        Auth
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/photo-icon.png" class="w-4 h-4" />
+        Photo Upload
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" class="w-4 h-4" />
+        Map View
+      </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://your-live-demo-link.com" target="_blank"
+               class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo
+            </a>
+            <a href="https://github.com/your-repo-link" target="_blank"
+               class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/ball-pool-simulator-ss.png" alt="Ball Pool Simulator Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Ball Pool Simulator – Java-based Physics Game</h3>
+          <p class="text-gray-700 mb-4">
+            Created a desktop simulation of a 2D pool game using Java Swing. Implemented real-world physics like collision, friction, and momentum, along with level switching, score tracking, and keyboard-controlled gameplay.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="w-4 h-4" />
+        Java
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/java-swing-icon.png" class="w-4 h-4" />
+        Swing
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/physics-icon.png" class="w-4 h-4" />
+        Physics Simulation
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/oop-icon.png" class="w-4 h-4" />
+        OOP Design
+      </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://your-live-demo-link.com" target="_blank"
+               class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo
+            </a>
+            <a href="https://github.com/your-repo-link" target="_blank"
+               class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/file-downloader-ss.png" alt="Multithreaded File Downloader Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Multithreaded File Downloader</h3>
+          <p class="text-gray-700 mb-4">
+            Built a CLI-based file downloader in C++ using libcurl and pthreads. Split files into byte ranges and downloaded them concurrently via HTTP range requests, improving download speed with thread-safe I/O.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="w-4 h-4" />
+        C++
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/pthreads-icon.png" class="w-4 h-4" />
+        pthreads
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/libcurl-icon.png" class="w-4 h-4" />
+        libcurl
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/cli-icon.png" class="w-4 h-4" />
+        CLI
+      </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://your-live-demo-link.com" target="_blank"
+               class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo
+            </a>
+            <a href="https://github.com/your-repo-link" target="_blank"
+               class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+      <!-- SINGLE PROJECT CARD -->
+      <div class="project-card bg-white text-black shadow-xl rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-all duration-300">
+        <img src="./assets/link-prediction-ss.png" alt="Link Prediction Project Screenshot" class="w-full h-60 object-cover" />
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold mb-2">Link Prediction in Complex Networks</h3>
+          <p class="text-gray-700 mb-4">
+            Designed a Python-based framework using mutual information to predict missing links in real-world graphs. Compared results with traditional similarity-based methods like Common Neighbors, CRA, and Resource Allocation across benchmark datasets.
+          </p>
+
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-3 mb-4">
+      <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-4 h-4" />
+        Python
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/networkx-icon.png" class="w-4 h-4" />
+        NetworkX
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="./assets/cnn-icon.png" class="w-4 h-4" />
+        CNN
+      </span>
+            <span class="flex items-center gap-1 bg-gray-100 px-2 py-1 text-xs rounded cursor-pointer">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" class="w-4 h-4" />
+        Matplotlib
+      </span>
+          </div>
+
+          <!-- Project Links -->
+          <div class="flex gap-4">
+            <a href="https://your-live-demo-link.com" target="_blank"
+               class="bg-[#1DCD9F] text-white px-4 py-2 rounded hover:bg-[#17b890] transition-all text-sm">
+              Live Demo
+            </a>
+            <a href="https://github.com/your-repo-link" target="_blank"
+               class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition-all text-sm">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /SINGLE PROJECT CARD -->
+    </div>
+  </div>
+</section>
+
+    <!-- UPCOMING PROJECTS SECTION -->
+    <section id="upcoming-projects" class="relative bg-[#0f0f0f] text-white py-20 px-6">
+      <div class="max-w-6xl mx-auto text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4">Upcoming Projects</h2>
+        <p class="text-gray-400 text-lg">Some exciting ideas I'm currently working on.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+
+        <!-- CARD: CryptoGPT -->
+        <div class="upcoming-card bg-white text-black rounded-xl shadow-lg p-6">
+          <h3 class="text-xl font-semibold mb-2">CryptoGPT</h3>
+          <p class="text-gray-700 text-lg mb-4">
+            An AI-powered assistant for live crypto queries and portfolio insights. Uses Spring Boot, GraphQL, OpenAI API, and React for chat-based interaction, real-time updates, and secure session tracking.
+          </p>
+          <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded text-xs font-semibold">Coming Soon</span>
+        </div>
+
+        <!-- CARD: Real-Time Data Streaming Pipeline -->
+        <div class="upcoming-card bg-white text-black rounded-xl shadow-lg p-6">
+          <h3 class="text-xl font-semibold mb-2">Real-Time Data Streaming Pipeline</h3>
+          <p class="text-gray-700 text-lg mb-4">
+            End-to-end IoT data pipeline using OSS tools on AWS. Includes EC2-hosted Kafka, Spark, Prometheus, Grafana, S3 for storage, PostgreSQL for analytics, and CDK for infrastructure-as-code.
+          </p>
+          <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded text-xs font-semibold">Coming Soon</span>
+        </div>
+
+        <!-- CARD: Full-Stack Bidding Platform -->
+        <div class="upcoming-card bg-white text-black rounded-xl shadow-lg p-6">
+          <h3 class="text-xl font-semibold mb-2">Cloud-Native Bidding Platform</h3>
+          <p class="text-gray-700 text-lg mb-4">
+            A full-stack event-based bidding system with Cassandra, Redis, Elasticsearch, AWS Fargate, Next.js, and a Hugging Face chatbot. Supports live bidding via SSE and auto-scaling deployments.
+          </p>
+          <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded text-xs font-semibold">Coming Soon</span>
+        </div>
+
+      </div>
+    </section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="bg-black text-white py-20 px-6 flex items-center justify-center">
+  <div class="w-full max-w-4xl text-center flex flex-col items-center gap-6">
+    <!-- Subtitle -->
+    <p class="text-gray-400 text-lg">Let's connect and build something amazing!</p>
+
+    <!-- Email Link -->
+    <a href="mailto:saikirananumalla@gmail.com" class="hover:text-gray-400 transition">
+      <h2 class="text-4xl font-bold mb-2">saikirananumalla@gmail.com</h2>
+    </a>
+
+<button
+  href="#"
+  class="flex overflow-hidden items-center text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-black text-white shadow hover:bg-black/90 h-9 px-4 py-2 max-w-52 whitespace-pre md:flex group relative w-full justify-center gap-2 rounded-md transition-all duration-300 ease-out hover:ring-2 hover:ring-black hover:ring-offset-2"
+>
+  <span
+    class="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-40"
+  ></span>
+  <div class="flex items-center">
+    <svg class="w-4 h-4 fill-current" viewBox="0 0 438.549 438.549">
+      <path
+        d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289 1.525-.859 4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136 6.28 0 11.704-.476 16.274-1.423 4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"
+      ></path>
+    </svg>
+    <span class="ml-1 text-white">Star on GitHub</span>
+  </div>
+  <div class="ml-2 flex items-center gap-1 text-sm md:flex">
+    <svg
+      class="w-4 h-4 text-gray-500 transition-all duration-300 group-hover:text-yellow-300"
+      data-slot="icon"
+      aria-hidden="true"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+        fill-rule="evenodd"
+      ></path>
+    </svg>
+    <span
+      class="inline-block tabular-nums tracking-wider font-display font-medium text-white"
+      ><a href="https://github.com/saikirananumalla">4</a></span
+    >
+  </div>
+</button>
+  </div>  
+</section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/@motionone/dom/dist/motion.min.js"></script>
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/motion.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Observer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EaselPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/PixiPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/EasePack.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- ParticleJs -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="script.js"></script>
+    </script>
+  </body>
+</html>
