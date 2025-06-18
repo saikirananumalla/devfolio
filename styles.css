@@ -296,23 +296,10 @@ body {
   }
   
 
-#framer{
+  #framer{
 
     color: white;
-}
-
-/* Light mode adjustments for buttons */
-@media (prefers-color-scheme: light) {
-  .shadow__btn {
-    background: rgb(60, 160, 255);
-    color: #fff;
   }
-
-  .dbutton {
-    background-color: #28a281;
-    border-color: #28a281;
-  }
-}
 
 /* Light mode overrides */
 body.light-mode {
@@ -337,6 +324,7 @@ body.light-mode header {
 body.light-mode #loading {
   background: #fff;
 }
+
 
 
   
