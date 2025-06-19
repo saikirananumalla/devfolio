@@ -80,6 +80,33 @@ gsap.utils.toArray(".journey-card").forEach((card, index) => {
   });
 });
 
+// HERO SECTION PARTICLES
+particlesJS("particles-hero", {
+  "particles": {
+    "number": {
+      "value": 100,
+      "density": { "enable": true, "value_area": 800 }
+    },
+    "color": { "value": "#ffffff" },
+    "opacity": { "value": 0.7, "random": false },
+    "size": { "value": 3, "random": true },
+    "line_linked": { "enable": false },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "bottom",
+      "out_mode": "out"
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": { "enable": false },
+      "onclick": { "enable": false }
+    }
+  },
+  "retina_detect": true
+});
+
 particlesJS("particles-projects", {
   "particles": {
     "number": { "value": 50 },
